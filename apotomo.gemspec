@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency "cells",   "3.11.3"
+  s.add_dependency "cells",   "< 4.0.0"
   s.add_dependency "onfire",  "~> 0.2.0"
   s.add_dependency "hooks",   "~> 0.4.0" # brings us uber.
 
